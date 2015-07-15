@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Soap Boks</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- My css -->
+	<style>
+		.scrollable-menu {
+			height: auto;
+			max-height: 500px;
+			overflow-x: hidden;
+		}
+		.image {
+			width:100%;
+			height:auto;
+		}
+	</style>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Server script -->
+	<script src="js/find.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Mobile button for the navbar-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- Brand Link -->
+				<a class="navbar-brand" href="#">Soap Boks</a>
+			</div>
+			<!-- navbar -->
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="distribute.html">Distribute Your Website</a>
+					<li><a href="#">Log In</a></li>
+					<li><a href="#">Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="image">
+	<div class="container">
+		<div class="page-header">
+			<h1>Find Sites</h1>
+			<p>Soap Boks is the best way to find amazing websites while getting something extra.</p>
+		</div>
+		<form role="form">
+			<div class="form-group">
+				<label for="text">Select App from Category</label>
+				<span class="input-group-btn" id="goButton">
+					<button class="btn btn-success" type="button" data-toggle="dropdown">Click to Select <span class="caret"></span></button>
+					<ul class="dropdown-menu scrollable-menu">
+						<li class="dropdown-header">Web Apps</li>
+						<li><a href="javascript:void(0)" onclick="findApp('Business');">Business</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Communication & Social');">Communication & Social</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Education');">Education</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Finance');">Finance</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Health');">Health</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Music');">Music & Audio</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('News');">News</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Photography');">Photography</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Shopping');">Shopping</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Transportation & Travel');">Transportation & Travel</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Video');">Video</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Weather');">Weather</a></li>
+						<li class="dropdown-header">Games</li>
+						<li><a href="javascript:void(0)" onclick="findApp('Action Adventure');">Action Adventure</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Board & Card');">Board & Card</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Educational');">Educational</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Music');">Music</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Puzzle');">Puzzle</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Racing');">Racing</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Role Playing');">Role Playing</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Racing');">Racing</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Simulation');">Simulation</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Sports');">Sports</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Trivia');">Trivia</a></li>
+						<li><a href="javascript:void(0)" onclick="findApp('Word');">Word</a></li>
+					</ul>
+				</span>
+			</div>
+		</form>
+		<div id="errorLoc">
+    		</div>
+	</div>
+	</div>
+	
+	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>© Soap Boks Inc. 2015</p>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
