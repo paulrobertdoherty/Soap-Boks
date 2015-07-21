@@ -9,19 +9,35 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
 	
 	<!-- My css -->
 	<style>
+        .font {
+            font-family: 'Open Sans';
+        }
 		.scrollable-menu {
 			height: auto;
-			max-height: 500px;
+			max-height: 400px;
 			overflow-x: hidden;
 		}
-		.image {
-			width:100%;
-			height:auto;
-		}
+        .navbar{
+            margin-bottom: 0px;
+        }
+        .insideImage {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .bottomOfImage {
+            position: relative;
+            top: 50%;
+            transform: translateY(50%);
+        }
 	</style>
+    <link href="css/navbar.css" rel="stylesheet">
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -39,7 +55,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar navbar-default navbar-static-top" role="navigation" style="color: #33CCCC">
 		<div class="container">
 			<div class="navbar-header">
 				<!-- Mobile button for the navbar-->
@@ -56,61 +72,54 @@
 			<!-- navbar -->
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="distribute.html">Distribute Your Website</a>
-					<li><a href="#">Log In</a></li>
-					<li><a href="#">Sign Up</a></li>
+					<li><a href="distribute.html">Distribute Your Website</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	
-	<div class="image">
-	<div class="container">
-		<div class="page-header">
-			<h1>Find Sites</h1>
-			<p>Soap Boks is the best way to find amazing websites while getting something extra.</p>
-		</div>
-		<form role="form">
-			<div class="form-group">
-				<label for="text">Select App from Category</label>
-				<span class="input-group-btn" id="goButton">
-					<button class="btn btn-success" type="button" data-toggle="dropdown">Click to Select <span class="caret"></span></button>
-					<ul class="dropdown-menu scrollable-menu">
-						<li class="dropdown-header">Web Apps</li>
-						<li><a href="javascript:void(0)" onclick="findApp('Business');">Business</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Communication & Social');">Communication & Social</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Education');">Education</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Finance');">Finance</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Health');">Health</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Music');">Music & Audio</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('News');">News</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Photography');">Photography</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Shopping');">Shopping</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Transportation & Travel');">Transportation & Travel</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Video');">Video</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Weather');">Weather</a></li>
-						<li class="dropdown-header">Games</li>
-						<li><a href="javascript:void(0)" onclick="findApp('Action Adventure');">Action Adventure</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Board & Card');">Board & Card</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Educational');">Educational</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Music');">Music</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Puzzle');">Puzzle</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Racing');">Racing</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Role Playing');">Role Playing</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Racing');">Racing</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Simulation');">Simulation</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Sports');">Sports</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Trivia');">Trivia</a></li>
-						<li><a href="javascript:void(0)" onclick="findApp('Word');">Word</a></li>
-					</ul>
-				</span>
-			</div>
-		</form>
-		<div id="errorLoc">
-    		</div>
-	</div>
-	</div>
-	
+    <div style="background-image: url('http://thewowstyle.com/wp-content/uploads/2015/03/Desktop-Wallpaper-HD2.jpg'); background-position: center; height: 400px;">
+        <div class="container insideImage" style="text-align: center;">
+            <h1 class="font">Discover it First</h1>
+            <p class="font">Soap Boks is the best way to find amazing websites before they go viral.</p>
+            <a href="how-it-works.html" class="btn btn-info btn-lg font" role="button">How it Works</a>
+        </div>
+        <div class="container bottomOfImage">
+            <span class="input-group-btn" id="goButton">
+                <button class="btn btn-block btn-success" type="button" data-toggle="dropdown">Click to Select Website from Category<span class="caret"></span></button>
+                <ul class="dropdown-menu scrollable-menu">
+                    <li class="dropdown-header">Web Apps</li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Business');">Business</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Communication & Social');">Communication & Social</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Education');">Education</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Finance');">Finance</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Health');">Health</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Music');">Music & Audio</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('News');">News</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Photography');">Photography</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Shopping');">Shopping</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Transportation & Travel');">Transportation & Travel</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Video');">Video</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Weather');">Weather</a></li>
+                    <li class="dropdown-header">Games</li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Action Adventure');">Action Adventure</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Board & Card');">Board & Card</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Educational');">Educational</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Music');">Music</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Puzzle');">Puzzle</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Racing');">Racing</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Role Playing');">Role Playing</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Racing');">Racing</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Simulation');">Simulation</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Sports');">Sports</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Trivia');">Trivia</a></li>
+                    <li><a href="javascript:void(0)" onclick="findApp('Word');">Word</a></li>
+                </ul>
+            </span>
+            <div id="errorLoc">
+            </div>
+        </div>
+    </div>
+    
 	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 		<div class="container">
 			<div class="navbar-text pull-left">
